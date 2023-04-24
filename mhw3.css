@@ -1,0 +1,196 @@
+body {
+    margin-top: 0;
+    font-family: Merriweather, Helvetica;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 25px;
+  }
+  
+  a {
+    font-family: Quicksand, Helvetica;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+  }
+  
+  a:hover{
+    color: palevioletred;
+    text-decoration: underline;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightpink;
+    height: 90px;
+    width: 100vw;
+  }
+  
+  header {
+  font-family: Quicksand, Helvetica;
+  background-image: URL(2357319.webp); 
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
+  #overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 { 
+    color: white;
+    text-shadow: 3px 3px 3px palevioletred;
+    text-align: center;
+    z-index: 1;
+    width: 780px;
+  }
+  
+  #img2 {
+    margin-top: -50px;
+    height: 100px;
+    border-radius: 50px;
+    width: 100px;
+    z-index: 1;
+  }
+  
+#utente{
+  text-align: center;
+  font-size: 17px;
+}
+
+  em {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);;
+  }
+  
+#introduzione {
+    padding-top: 60px;
+    text-align: left;
+    font-size: 21px;
+    width:66.67vw;
+   
+  }
+ 
+#boxverticale{
+  display: flex;
+  flex-direction: column;
+}
+
+.boxorizzontale{
+  padding-top: 120px;
+  display: flex;
+  width: 100vw;
+  
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+}
+
+.boxorizzontale img {
+  width: 50%;
+}
+
+  .numstep, .title{
+    font-size: 30px;
+    font-family: Quicksand, Helvetica;
+    font-weight: bold;
+  }
+  
+.title{
+  border-bottom: 2px solid rgba(0, 0, 0, .1);
+  background-color: lavenderblush;
+}
+
+  .description{
+    font-size: 21px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  
+  img{
+    width: 100%;
+  }
+  
+
+.numstep{
+  width: calc(16.665vw - 40px);
+  text-align: right;
+  padding-right: 40px;
+}
+
+.step{
+  width: 66.67vw;
+  
+}
+
+.menu{
+  display: none;
+}
+
+.menu{
+  width: 15px;
+  height: 3px;
+  background-color: deeppink;
+  margin-bottom: 5px;
+  margin-left: 2px;
+}
+
+@media(max-width: 550px)
+{
+  a{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  nav{
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+
+  h1{
+    width: 100%;
+  }
+
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#products .prod , #song {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+}
+
+#makeUp, #music {
+  text-align: center;
+}
+
